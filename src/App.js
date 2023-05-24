@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import Feed from './components/Feed';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import ChannelDetail from './components/ChannelDetail';
+import VideoDetail from './components/VideoDetail'
+import SearchFeed from './components/SearchFeed'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter basename='/youtube-clone'>
+    <Header/>
+      <Navbar />
+      <Routes>
+        <Route exact path='/youtube-clone' element={<Feed />} />
+        <Route path='/video/:id' element={<VideoDetail />} />
+        <Route path='/channel/:id' element={<ChannelDetail />} />
+        <Route path='/search/:searchTerm' element={<SearchFeed />} />
+      </Routes>
+  </BrowserRouter>
+    </>
   );
 }
 
