@@ -1,7 +1,7 @@
 {
   "name": "onepiece",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "http://mrarya2002.github.io/youtube-clone",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
