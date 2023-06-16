@@ -33,7 +33,7 @@ const Feed = () => {
                   src={data.urls.small}
                   alt="user photo"
                 />
-                <span class="truncate text-gray-400 px-1">
+                <span class="truncate text-gray-400 w-14">
                   {data.user.name}
                 </span>
               </div>
