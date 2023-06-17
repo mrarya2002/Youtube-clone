@@ -10,11 +10,11 @@ import SearchFeed from './components/SearchFeed'
 function App() {
   return (
     <>
-    <BrowserRouter basename='/youtube-clone'>
+    <BrowserRouter>
     <Header/>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Feed />} />
+        <Route exact path='/' element={<Feed />} />
         <Route path='/video/:id' element={<VideoDetail />} />
         <Route path='/channel/:id' element={<ChannelDetail />} />
         <Route path='/search/:searchTerm' element={<SearchFeed />} />
