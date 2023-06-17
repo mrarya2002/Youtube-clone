@@ -14,7 +14,7 @@ function App() {
     <Header/>
       <Navbar />
       <Routes>
-        <Route exact path='/youtube-clone' element={<Feed />} />
+        <Route path='/' element={<Feed />} />
         <Route path='/video/:id' element={<VideoDetail />} />
         <Route path='/channel/:id' element={<ChannelDetail />} />
         <Route path='/search/:searchTerm' element={<SearchFeed />} />

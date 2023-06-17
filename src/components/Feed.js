@@ -4,7 +4,7 @@ import loader from '../images/load.gif'
 import axios from "axios";
 import { useGlobalContext } from "../context/Context";
 
-const furl = "https://api.unsplash.com/search/photos?page=1&per_page=40&query=beautiful+cute+girls&client_id=K98Bz6zELrsMqcDf_p_RvfOdZ3IMS8qPfsnllwZObpY"
+const furl = "https://api.unsplash.com/search/photos?page=1&per_page=40&query=one+piece&client_id=K98Bz6zELrsMqcDf_p_RvfOdZ3IMS8qPfsnllwZObpY"
 
 const Feed = () => {
   const { searchResults, loading } = useGlobalContext();
